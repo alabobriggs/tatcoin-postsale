@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* top container  */
+
+.container {
+  background: url("/img/background.png");
+  min-height: 100vh;
+  padding: 35px 130px;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul a {
+  color: white;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  margin: 0rem 0rem 0rem 3rem;
+}
+
+/* main container */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  color: white;
+  margin: 45px 0px 20px;
+  font-size: 22px;
+}
+
+main form {
+  width: 40%;
+  background: white;
+  box-shadow: 0px 13px 26px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  main form {
+    width: 100%;
+  }
+}
+
+.input-container {
+  padding: 25px 30px;
+}
+
+main form .submit-button {
+  width: 100%;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background: #d98c21;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.215em;
+}
+
+form .image-input,
+form .amount-input {
+  margin: 0rem 0rem 15px;
+  display: block;
+}
+
+form .image-input > div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 0px;
+  background: #ffffff;
+  border: 1px solid #cfd9e9;
+  border-radius: 4px;
+  padding: 9px 9px;
+}
+
+input {
+  border: none;
+  flex-grow: 1;
+  padding: 0rem 7px;
+  outline: none;
+}
+
+form .amount-input > div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 0px;
+  background: #ffffff;
+  border: 1px solid #cfd9e9;
+  border-radius: 4px;
+}
+
+form .amount-input > div > .currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  background: #ececec;
+  border-right: 1px solid #cfd9e9;
+  border-radius: 4px 0px 0px 4px;
+}
